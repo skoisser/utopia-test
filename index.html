@@ -210,6 +210,7 @@ background-image: url(data:image/gif;base64,R0lGODlhDwAPAKUBAAAAAP///9zc3NTU1NDQ
 
 
     </style>
+	  
     <script type="text/javascript">
 
 
@@ -2012,21 +2013,37 @@ function HideSymbol() {
 </style>
 
 
+<style>
+.pswdbox {
+  background-color: white;
+  border: 1px solid black;
+  color: black;
+  padding: 5px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+  font-family: monospace;
+  margin: 7px 0px;
+ 
+}
+</style>
+
   </head>
   <body>
   
-<div id=Symbol style="font-size:180px; display:block;">
+<div id=Symbol style="font-size:180px; margin: auto; text-align: center; display:block;">
 
-<img src="logo.png" alt="Peace" id="logo" data-height-percentage="100" />
+<img src="logo.png" alt="☮" id="logo" data-height-percentage="100" />
 
 </div>
 
 
-<form id="Form1" STYLE="display:block; font-size: 12px; font-family: monospace;">
+<form id="Form1" STYLE="display:block;  margin: auto; text-align: center; font-size: 12px; font-family: monospace;">
     <label for="pswd">Enter the password: </label>
     </br>
 </br>
-    <input type="password" id="pswd">
+    <input type="password" class="pswdbox" id="pswd">
   
 
 </form>
@@ -2041,7 +2058,9 @@ input.addEventListener("keypress", function(event) {
 });
 </script>
 
-<BUTTON ID="Button1" class="button" STYLE="display:block" ONCLICK="ShowAndHide(); ShowAndHide2(); HideButton(); HideForm(); HideSymbol();">Decrypt!?</BUTTON>
+</br>
+
+<BUTTON ID="Button1" class="button" STYLE="display:block; margin: auto;" ONCLICK="ShowAndHide(); ShowAndHide2(); HideButton(); HideForm(); HideSymbol();">Decrypt</BUTTON>
 
 
 <script type="text/javascript">
